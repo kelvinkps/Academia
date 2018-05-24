@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <listener>
+        <description>ServletContextListener</description>
+        <listener-class>br.com.academia.servlet.AcademiaListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>BuscarCliente</servlet-name>
+        <servlet-class>br.com.academia.servlet.BuscarCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadastrarCliente</servlet-name>
+        <servlet-class>br.com.academia.servlet.CadastrarCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CadastrarUsuario</servlet-name>
+        <servlet-class>br.com.academia.servlet.CadastrarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BuscarUsuario</servlet-name>
+        <servlet-class>br.com.academia.servlet.BuscarUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EfetuarLogin</servlet-name>
+        <servlet-class>br.com.academia.servlet.EfetuarLogin</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BuscarCliente</servlet-name>
+        <url-pattern>/BuscarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastrarCliente</servlet-name>
+        <url-pattern>/CadastrarCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CadastrarUsuario</servlet-name>
+        <url-pattern>/CadastrarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BuscarUsuario</servlet-name>
+        <url-pattern>/BuscarUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EfetuarLogin</servlet-name>
+        <url-pattern>/EfetuarLogin</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
