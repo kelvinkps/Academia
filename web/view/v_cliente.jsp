@@ -1,7 +1,7 @@
 <%@page import="br.com.academia.entidade.Cliente"%>
 <%@page import="java.util.List" %>
 <%
-    List<Cliente>lstCliente =  (List<Cliente>)request.getAttribute("lstCliente");
+    List<Cliente> lstCliente = (List<Cliente>) request.getAttribute("lstCliente");
 %>
 <div class="right_col" role="main">
     <div class="">
@@ -77,20 +77,19 @@
                     <div class="x_content">
                         <br>
                         <div>
-                            <table class="table table-striped">
+                            <table id="example" class="display" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>Id</th>
+                                        <th>ID</th>
                                         <th>Nome</th>
-                                        <th>E-mail</th>
+                                        <th>Email</th>
                                         <th>Telefone</th>
                                         <th>Cpf</th>
-                                        <th>Endereço</th>
-                                        <th class="text-center">Ferramentas</th>
+                                        <th>Endereco</th>                                       
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <% for(Cliente cli:lstCliente){ %>
+                                    <% for (Cliente cli : lstCliente) {%>
                                     <tr>
                                         <td><%=cli.getId()%></td>
                                         <td><%=cli.getNome()%></td>
@@ -98,10 +97,19 @@
                                         <td><%=cli.getTelefone()%></td>
                                         <td><%=cli.getCpf()%></td>
                                         <td><%=cli.getEndereco()%></td>
-                                        <td class="text-center"><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><a class="fa fa-wrench text-blue" href="ExcluirUsuario?id=" ></a></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><a class="fa fa-close text-red"></a></div></td>
                                     </tr>
-                                    <% } %>
+                                    <% }%>
                                 </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Nome</th>
+                                        <th>Email</th>
+                                        <th>Telefone</th>
+                                        <th>Cpf</th>
+                                        <th>Endereco</th>
+                                    </tr>
+                                </tfoot>
                             </table>
                         </div>
                         <br>

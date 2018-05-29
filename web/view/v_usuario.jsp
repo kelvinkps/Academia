@@ -1,7 +1,7 @@
 <%@page import="br.com.academia.entidade.Usuario"%>
 <%@page import="java.util.List" %>
 <%
-    List<Usuario>lstUsuario =  (List<Usuario>)request.getAttribute("lstUsuario");
+    List<Usuario> lstUsuario = (List<Usuario>) request.getAttribute("lstUsuario");
 %>
 <div class="right_col" role="main">
     <div class="">
@@ -48,13 +48,12 @@
                     </div>
                     <div class="x_content">
                         <div>
-                            <table class="table table-striped">
+                            <table id="example" class="display" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>Id</th>
+                                        <th>ID</th>
                                         <th>Nome</th>
                                         <th>Login</th>
-                                        <th class="text-center">Ferramentas</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -63,10 +62,16 @@
                                         <td><%=usu.getId()%></td>
                                         <td><%=usu.getNome()%></td>
                                         <td><%=usu.getLogin()%></td>
-                                        <td class="text-center"><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><a class="fa fa-wrench text-blue" href="ExcluirUsuario?id=" ></a></div><div class="col mdc-button" data-mdc-auto-init="MDCRipple"><a class="fa fa-close text-red"></a></div></td>
                                     </tr>
                                     <% }%>
                                 </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <th>ID  </th>
+                                        <th>Nome</th>
+                                        <th>Login</th>
+                                    </tr>
+                                </tfoot>
                             </table>
                         </div>
                     </div>
