@@ -3,8 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Kelvin/Documentos/Facu/Web/Academia/web/view/v_usuario.jsp</file>
-            <file>file:/D:/Kelvin/Documentos/Facu/Web/Academia/web/css/custom.min.css</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/src/java/br/com/academia/servlet/EditarUsuario.java</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/web/topmenu.jsp</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/web/cadastrar_Usuario.jsp</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/web/tela_Usuario.jsp</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/src/java/br/com/academia/servlet/BuscarUsuarioId.java</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/web/cadastrarusuario.jsp</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/web/view/v_usuario.jsp</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/web/WEB-INF/web.xml</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/web/header.jsp</file>
+            <file>file:/E:/Executaveis%20liberados/Academia-master/src/java/br/com/academia/servlet/BuscarUsuario.java</file>
         </group>
     </open-files>
 </project-private>

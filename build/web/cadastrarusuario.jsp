@@ -46,10 +46,10 @@
                                         
                                     </div>
                                     <div class="col col-lg-10">
-                                        <h1>Cadastrar Usuário</h1>
+                                        <h1>Editar Usuário</h1>
                                         <br><br>
                                         <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6">
-                                            <form action="CadastrarUsuario" method="post">
+                                            <form action="EditarUsuario" method="post">
                                                 <div class="form-group">
                                                     <label for="nome">Nome:</label>
                                                     <input type="text" name="nome" class="form-control" id="nome">

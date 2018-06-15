@@ -54,6 +54,7 @@
                                         <th>ID</th>
                                         <th>Nome</th>
                                         <th>Login</th>
+                                        <th>Ferramenta</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -62,6 +63,7 @@
                                         <td><%=usu.getId()%></td>
                                         <td><%=usu.getNome()%></td>
                                         <td><%=usu.getLogin()%></td>
+                                        <td><a href="ExcluirUsuario?id=<%=usu.getId()%>">Deletar </a><a href="BuscarUsuarioId?id=<%=usu.getId()%>"> Editar</a></td>
                                     </tr>
                                     <% }%>
                                 </tbody>
@@ -70,6 +72,7 @@
                                         <th>ID  </th>
                                         <th>Nome</th>
                                         <th>Login</th>
+                                        <th>Ferramenta</th>
                                     </tr>
                                 </tfoot>
                             </table>
